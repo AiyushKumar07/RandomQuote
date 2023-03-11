@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html body,
+.button {
+    transition: background-color 1s ease;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    height: 100vh;
+}
+
+#quote-box {
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+/* Navbar  */
+
+.navbar {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 3;
+    height: 45px;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+}
+
+.navbar img {
+    height: 50px;
+    width: 300px;
+    object-fit: cover;
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar .footer {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    right: 20px;
+}
+
+.navbar>.footer a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Wrapper  */
+
+/* body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+#quote-box {
+    height: fit-content;
+    padding: 40px 50px;
+    display: table;
+    background-color: #fff;
+    transition: all 0.7s ease;
+} */
+
+#quote-box .quote-text {
+    text-align: center;
+    width: clamp(100px, 450px, 600px);
+    height: auto;
+    clear: both;
+    font-weight: 500;
+    font-size: 1.75em;
+}
+
+#quote-box .quote-text i {
+    font-size: 1em;
+    margin-right: 0.4em;
+}
+
+#quote-box .quote-author {
+    width: 450px;
+    height: auto;
+    clear: both;
+    padding-top: 20px;
+    font-size: 1em;
+    text-align: right;
+}
+
+#quote-box .buttons {
+    width: 450px;
+    margin: auto;
+    display: block;
+}
+
+#quote-box .buttons .button {
+    height: 38px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #333;
+    outline: none;
+    font-size: 0.85em;
+    padding: 8px 18px 6px 18px;
+    margin-top: 30px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#quote-box .buttons .button:hover {
+    opacity: 0.9;
+}
+
+#quote-box .buttons .button#tweet-quote,
+#quote-box .buttons .button#whatsapp-quote {
+    float: left;
+    padding: 0px;
+    padding-top: 8px;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 5px;
+    height: 38px;
+    width: 40px;
+}
+
+
+#tweet-quote {
+    background: linear-gradient(43deg, rgba(35, 157, 182, 1) 12%, rgba(9, 9, 121, 1) 56%, rgba(2, 0, 36, 1) 83%);
+}
+
+#whatsapp-quote {
+    background: linear-gradient(43deg, rgba(9, 255, 0, 1) 9%, rgba(18, 182, 87, 1) 41%, rgba(16, 145, 51, 1) 74%);
+}
+
+#quote-box .buttons .button#new-quote {
+    float: right;
+}
+
+
+/* Media Queries */
+/* Extra small devices (phones) */
+@media only screen and (max-width: 576px) {
+    .navbar img {
+        width: 150px;
+    }
+
+    .navbar span {
+        font-size: 0.8rem;
+    }
+
+    #quote-box {
+        max-width: 90vw;
+        max-height: 90vh;
+        overflow: auto;
+        padding: 30px;
+        font-size: 0.8em;
+    }
+
+    #quote-box .quote-text {
+        width: auto;
+        font-size: 20px;
+    }
+
+    #quote-box .quote-author {
+        width: auto;
+        font-size: 15px;
+    }
+
+    #quote-box .buttons {
+        width: auto;
+        font-size: 0.75em;
+    }
+
+    #quote-box .buttons .button#tweet-quote,
+    #quote-box .buttons .button#whatsapp-quote {
+        width: 30px;
+        height: 30px;
+    }
+
+    #quote-box .buttons .button#new-quote {
+        height: 30px;
+        width: 80px;
+    }
+}
+
+/* Small devices (tablets) */
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    img {
+        width: 250px;
+    }
+
+    .navbar img {
+        width: 150px;
+    }
+
+    .navbar span {
+        font-size: 0.8rem;
+    }
+
+    #quote-box {
+        max-width: 90vw;
+        max-height: 90vh;
+        overflow: auto;
+        padding: 30px;
+        font-size: 0.8em;
+    }
+
+    #quote-box .quote-text {
+        width: auto;
+        font-size: 20px;
+    }
+
+    #quote-box .quote-author {
+        width: auto;
+        font-size: 15px;
+    }
+
+    #quote-box .buttons {
+        width: auto;
+        font-size: 0.75em;
+    }
+
+    #quote-box .buttons .button#tweet-quote,
+    #quote-box .buttons .button#whatsapp-quote {
+        width: 30px;
+        height: 30px;
+    }
+
+    #quote-box .buttons .button#new-quote {
+        height: 30px;
+        width: 80px;
+    }
+}
