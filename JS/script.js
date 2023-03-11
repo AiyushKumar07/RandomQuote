@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Whatsapp
                 document.querySelector('#whatsapp-quote').setAttribute(
                     'href',
-                    'https://web.whatsapp.com/send?text=' +
+                    'https://wa.me/send?text=' +
                     encodeURIComponent('"' + currentQuote + '"\n -' + currentAuthor)
                 );
 
