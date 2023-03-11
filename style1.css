@@ -67,24 +67,6 @@ body {
     color: #fff;
 }
 
-/* Wrapper  */
-
-/* body {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} 
-
-#quote-box {
-    height: fit-content;
-    padding: 40px 50px;
-    display: table;
-    background-color: #fff;
-    transition: all 0.7s ease;
-} */
-
 #quote-box .quote-text {
     text-align: center;
     width: clamp(100px, 450px, 600px);

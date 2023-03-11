@@ -1,7 +1,5 @@
-/* eslint-disable max-len */
-// eslint-disable-next-line no-unused-vars
 // const projectName = 'random-quote-machine';
-// let quotesData;
+
 var currentQuote = '', color = '',
     currentAuthor = '';
 const directions = [
@@ -103,8 +101,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Set the linear gradient background with the random direction
         document.querySelector("html body").style.background = `linear-gradient(${randomDirection}, ${color}, black)`;
-        // document.querySelector("html").style.background = `linear-gradient(${randomDirection}, ${color}, black)`;
-        // document.querySelector('html body').style.backgroundColor = color;
     }
 
     // Attach an event listener to the `button`
