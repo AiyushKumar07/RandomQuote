@@ -142,9 +142,12 @@ body {
 
 /* Media Queries */
 /* Extra small devices (phones) */
+
+
 @media only screen and (max-width: 576px) {
-    .navbar img {
-        width: 150px;
+    .navbar {
+        justify-content: flex-start;
+        padding: 0px 20px 0px 20px;
     }
     #logo {
         text-decoration: none;
@@ -152,7 +155,7 @@ body {
         font-size: 0.8rem;
     }
     .navbar span {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
     }
 
     #quote-box {
